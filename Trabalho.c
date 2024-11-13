@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-diminuir(int valor1, int valor2){
-int result, resposta, i;
+diminuir( valor1, valor2){
+int result, resposta;
         printf("Subtração\n");
             printf("Digite o resultado da operação: %d - %d = \n",valor1, valor2);
-            scanf("%d",resposta);
+            scanf("%d", &resposta);
             result = valor1 - valor2;
-        if (result = resposta)
+        if (result == resposta)
         {
             printf("Respota correta.\n");
             printf("+10 Pontos\n");
@@ -15,16 +15,16 @@ int result, resposta, i;
             printf("Respota incorreta.\n");
         }
 }
-somar(int valor1,int valor2){ 
+somar( valor1, valor2){ 
 int resposta, resultado; 
         printf("Adição\n"); 
             printf("Digite o resultado da operação: %d + %d = \n", valor1, valor2); 
             // Resposta do usuário 
-            scanf("%d", resposta); 
+            scanf("%d", &resposta); 
             // Resultado 
             resultado = valor1 + valor2; 
             // Validação do resultado 
-            if (resultado = resposta)
+            if (resultado == resposta)
             { 
                 printf("Resposta correta\n");
                 printf("+10 Pontos\n");
@@ -32,20 +32,43 @@ int resposta, resultado;
                 printf("Resposta incorreta\n"); 
                 } 
 }
-multiplicar(int valor1, int valor2){
+multiplicar( valor1,  valor2){
 int resposta, resultado; 
         printf("Multiplicação\n"); 
             printf("Digite o resultado da operação: %d * %d = \n", valor1, valor2); 
             // Resposta do usuário 
-            scanf("%d", resposta); 
+            scanf("%d", &resposta); 
             // Resultado 
             resultado = valor1 * valor2; 
             // Validação do resultado 
-            if (resultado = resposta)
+            if (resultado == resposta)
             { 
                 printf("Resposta correta\n");
                 printf("+10 Pontos\n");
                 } else { 
                 printf("Resposta incorreta\n"); 
                 } 
+}
+dividir( valor1, valor2){
+float resultado, resposta;
+        printf("Divisão\n"); 
+            printf("Digite o resultado da operação: %d / %d = \n", valor1, valor2); 
+            // Resposta do usuário 
+            scanf("%f", &resposta); 
+            // Resultado 
+            resultado = valor1 / valor2; 
+            // Validação do resultado 
+            if (resultado == resposta)
+            { 
+                printf("Resposta correta\n");
+                printf("+10 Pontos\n");
+                } else { 
+                printf("Resposta incorreta\n"); 
+                } 
+}
+int main(){
+    dividir(10,5);
+    multiplicar(2,1);
+    somar(1,1);
+    diminuir(2,1);
 }
