@@ -99,7 +99,6 @@ void Subtracao(int *valor1, int *valor2){
         {
             printf("Respota correta.\n");
             printf("+10 Pontos\n");
-            *pontuacao 
         }else{
             printf("Respota incorreta.\n");
         }
